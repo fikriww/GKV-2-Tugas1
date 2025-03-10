@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and Run Current OpenGL File",
+            "type": "shell",
+            "command": "g++ ${file} -o ${fileBasenameNoExtension} -I/opt/homebrew/include -L/opt/homebrew/lib -framework GLUT -framework OpenGL && ./${fileBasenameNoExtension}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
